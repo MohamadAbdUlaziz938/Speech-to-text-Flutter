@@ -137,6 +137,7 @@ class _SpeechSampleAppState extends State<SpeechSampleApp> {
       localeId: _currentLocaleId,
       onSoundLevelChange: soundLevelListener,
       listenOptions: options,
+
     );
     setState(() {});
   }
