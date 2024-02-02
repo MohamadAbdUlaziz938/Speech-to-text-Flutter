@@ -28,5 +28,5 @@ workflows:
           - mohamad.samer.abdulaziz@gmail.com
         notify:
           success: true
-          failure: false
+          failure: true
 
