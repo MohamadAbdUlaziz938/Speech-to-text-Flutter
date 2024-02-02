@@ -26,7 +26,8 @@ workflows:
       email:
         recipients:
           - mohamad.samer.abdulaziz@gmail.com
+          - sara.chrouf@misraj.ai
         notify:
           success: true
-          failure: true
+          failure: false
 
