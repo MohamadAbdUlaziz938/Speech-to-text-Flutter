@@ -1,0 +1,32 @@
+workflows:
+  dev-android:
+    name: Dev android
+    environment:
+      flutter: stable
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Build apk with flutter
+        script: |
+          flutter build apk --split-per-abi --obfuscate --split-debug-info=debug\
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'master'
+          include: true
+          source: true
+      cancel_previous_builds: true
+    publishing:
+      email:
+        recipients:
+          - mohamad.samer.abdulaziz@gmail.com
+        notify:
+          success: true
+          failure: true
+
