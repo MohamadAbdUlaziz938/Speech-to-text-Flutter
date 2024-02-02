@@ -1,16 +1,11 @@
-# speech_to_tex
+# speech to text
 
-A new Flutter project.
+Mobile application implementing speech to text feature
 
-## Getting Started
+## Requirements
+- Flutter version used is  **3.10.6**
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [speech to text plugin](https://pub.dev/packages/speech_to_text)
+- [vosk plugin](https://pub.dev/packages/vosk_flutter) read more about vosk via [this link](https://alphacephei.com/vosk)
